@@ -1,0 +1,385 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f6ff;
+    color: #20213a;
+}
+
+/* NAVBAR */
+
+.hero {
+    background: linear-gradient(135deg, #171a3d, #343b78);
+    color: white;
+    padding-bottom: 90px;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #a89bff;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #777ba7;
+    padding: 9px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: white;
+    color: #25284f;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 65px 20px 0;
+}
+
+.tagline {
+    color: #b9b2ff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.25;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.hero-content h1 span {
+    color: #a89bff;
+}
+
+.hero-content p {
+    color: #d2d4eb;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* PRICING SECTION */
+
+.pricing-section {
+    max-width: 1200px;
+    margin: -35px auto 0;
+    padding: 0 25px 60px;
+}
+
+/* BILLING TOGGLE */
+
+.billing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.billing-btn {
+    border: none;
+    background: white;
+    padding: 11px 23px;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555875;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.billing-btn:hover {
+    background: #e8e5ff;
+}
+
+.billing-btn.active {
+    background: #6254db;
+    color: white;
+}
+
+.save-badge {
+    background: #dff8e9;
+    color: #168348;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 7px 12px;
+    border-radius: 20px;
+}
+
+/* PRICING CARDS */
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    background: white;
+    padding: 35px 28px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(30, 35, 90, 0.08);
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(30, 35, 90, 0.15);
+}
+
+.popular {
+    border: 2px solid #7162ed;
+    transform: scale(1.04);
+}
+
+.popular:hover {
+    transform: scale(1.04) translateY(-8px);
+}
+
+.plan-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: #85869b;
+    font-size: 12px;
+    min-height: 40px;
+    line-height: 1.7;
+}
+
+.price-box {
+    margin: 25px 0;
+}
+
+.price-box h3 {
+    font-size: 43px;
+    font-weight: 700;
+    color: #24264b;
+}
+
+.unit {
+    font-size: 12px;
+    color: #8c8da1;
+}
+
+.choose-btn {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #7162ed;
+    border-radius: 9px;
+    background: white;
+    color: #6254db;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.choose-btn:hover {
+    background: #6254db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.choose-btn.primary {
+    background: #6254db;
+    color: white;
+}
+
+.choose-btn.primary:hover {
+    background: #4638bd;
+}
+
+.divider {
+    height: 1px;
+    background: #eeeeF5;
+    margin: 25px 0;
+}
+
+.card h4 {
+    font-size: 13px;
+    margin-bottom: 17px;
+}
+
+.features {
+    list-style: none;
+}
+
+.features li {
+    font-size: 12px;
+    color: #696b82;
+    margin-bottom: 15px;
+}
+
+/* BADGES */
+
+.ribbon {
+    position: absolute;
+    top: 18px;
+    right: -35px;
+    background: #6254db;
+    color: white;
+    padding: 7px 38px;
+    font-size: 9px;
+    font-weight: 700;
+    transform: rotate(45deg);
+}
+
+.best-value {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: #fff0d7;
+    color: #bd7a15;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 6px 10px;
+    border-radius: 15px;
+}
+
+/* BOTTOM TEXT */
+
+.bottom-text {
+    text-align: center;
+    color: #85869b;
+    font-size: 12px;
+    margin-top: 45px;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background: #171a3d;
+    color: #c9cbe0;
+    padding: 22px;
+    font-size: 12px;
+}
+
+/* TABLET AND MOBILE */
+
+@media (max-width: 800px) {
+    .pricing-container {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: auto;
+    }
+
+    .popular {
+        order: -1;
+        transform: none;
+    }
+
+    .popular:hover {
+        transform: translateY(-8px);
+    }
+
+    .hero {
+        padding-bottom: 80px;
+    }
+
+    .pricing-section {
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .hero-content {
+        padding-top: 45px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .pricing-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card {
+        padding: 30px 22px;
+    }
+
+    .billing {
+        gap: 6px;
+    }
+
+    .billing-btn {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .save-badge {
+        font-size: 9px;
+        padding: 6px 8px;
+    }
+}
+
+/* ACCESSIBILITY */
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #ffad42;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+
+    .card:hover,
+    .popular:hover {
+        transform: none;
+    }
+}
